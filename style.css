@@ -1,0 +1,86 @@
+/* General reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #1d1c1c;
+  background: url("img/bg.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Gaya untuk navbar */
+.navbar {
+  background-color: #a36007;
+}
+
+/* Gaya logo di navbar */
+.navbar-brand img {
+  border-radius: 100%;
+  width: 125px;
+  height: 125px;
+}
+
+/* Gaya untuk jumbotron */
+.jumbotron {
+  background-color: #d7a15b;
+  color: #fff;
+}
+
+/* Styling untuk kontainer About */
+.about-content {
+  display: flex; /* Menggunakan Flexbox agar gambar dan teks berdampingan */
+  justify-content: center; /* Menyelaraskan konten di tengah secara horizontal */
+  text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+/* Styling untuk gambar */
+.about-img {
+  width: 500px; /* Sesuaikan ukuran gambar */
+  height: auto; /* Menjaga aspek rasio gambar */
+  margin-right: 30px; /* Memberi jarak antara gambar dan teks */
+  border-radius: 5px; /* Membuat sudut gambar lebih lembut */
+}
+
+/* Styling untuk teks */
+.about-text {
+  font-size: 1.2rem; /* Ukuran teks */
+  line-height: 1.6; /* Jarak antar baris */
+  max-width: 600px; /* Membatasi lebar teks agar tidak terlalu panjang */
+}
+
+/* Gaya untuk footer */
+footer {
+  background-color: #a36007;
+  color: #fff;
+}
+
+/* Gaya untuk kotak koleksi buku */
+/* Gaya gambar dalam koleksi */
+.collection-box img {
+  width: 100px; /* Sesuaikan ukuran gambar */
+  height: 100px; /* Pastikan tinggi dan lebar sama */
+  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+  margin-bottom: 10px; /* Jarak antara gambar dan teks */
+  object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+  border: 2px solid #d2b48c; /* Tambahkan border jika diperlukan */
+}
+
+/* Efek saat kotak koleksi diklik */
+.collection-box {
+  border: 1px solid #d2b48c;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.collection-box.active {
+  background-color: #373008; /* Warna emas */
+  transform: scale(1.05); /* Efek zoom */
+}
+
+.collection-box:hover {
+  background-color: #f0e68c; /* Warna saat hover */
+}
